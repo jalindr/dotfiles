@@ -1,0 +1,6 @@
+[user]
+	name = jalindr
+	email = jalindr@live.in
+[http]
+	sslVerify = true
+	sslCAinfo = /etc/pki/tls/certs/ca-bundle.crt

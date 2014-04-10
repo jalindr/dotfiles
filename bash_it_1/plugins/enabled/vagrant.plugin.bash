@@ -1,0 +1,1 @@
+/root/.bash_it/plugins/available/vagrant.plugin.bash

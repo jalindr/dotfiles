@@ -1,0 +1,1 @@
+/root/.bash_it/aliases/available/vagrant.aliases.bash
