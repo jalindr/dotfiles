@@ -1,1 +1,0 @@
-/root/.bash_it/plugins/available/z.plugin.bash

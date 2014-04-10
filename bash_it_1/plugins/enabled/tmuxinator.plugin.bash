@@ -1,1 +1,0 @@
-/root/.bash_it/plugins/available/tmuxinator.plugin.bash
