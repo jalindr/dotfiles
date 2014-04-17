@@ -25,8 +25,10 @@
  Plugin 'FuzzyFinder'
  Plugin 'bling/vim-airline'
 
-
+"""""""""""""""""""""""""""""""""""""""""""""""""
  " Random Stuff
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
 
  set number "set line numbers
  set autoread	" autoread file if changed
@@ -42,10 +44,17 @@
  set title " change the terminal's title
  set hidden   " hide buffers instead of closing them,put current buffer to background
               "without being written and that marks and undo history are preserved
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+ " Themes
+
+"""""""""""""""""""""""""""""""""""""""""""""""""
+
  color 256-jungle
+ colorscheme molokai
  set backspace=eol,start,indent " Configure backspace so it acts as it should act
  set whichwrap+=<,>,h,l
- " set background=dark
 
  " No save backup by .swp
 
@@ -54,6 +63,7 @@
  set noar
 
  " WhiteSpace stuff
+
  set smarttab
  set nowrap
  set tabstop=4 " a tab is four spaces
@@ -73,7 +83,7 @@
  let g:syntastic_enable_signs=1
  let g:syntastic_quiet_messages = {'level': 'warnings'}
 
-" Delete all whitespace in end of line
+ " Delete all whitespace in end of line
 
  autocmd BufWritePre * :%s/\s\+$//e
 
@@ -98,7 +108,7 @@
  " Airline
 
  """"""""""""""""""""""""""""""""""""""""""""""""
- " let g:airline_theme             = 'powerlineish'
+ let g:airline_theme             = 'powerlineish'
  let g:airline_enable_branch     = 1
  let g:airline_enable_syntastic  = 1
 
