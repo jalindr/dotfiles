@@ -1,5 +1,4 @@
-## The sysytem wide dotfiles to be sysnced
-
+# The sysytem wide dotfiles to be sysnced
 
 
 jalindr
