@@ -8,7 +8,7 @@
 
 DIR=~/dotfiles                    # dotfiles directory
 OLDDIR=~/dotfiles.old             # old dotfiles backup directory
-FILES="bash_it vim bash_profile bashrc vimrc"    # list of things to symlink in homedir
+FILES="bash_profile bashrc vimrc"    # list of things to symlink in homedir
 CONFDIR="bash_it vim/bundle/vundle"		# make default directory if not exits
 # clone the my bash_it repo and vundle repo to the dotfiles dir
 
