@@ -1,10 +1,10 @@
 #!/bin/bash
-############################
+#################################################
 # install.sh
 # Create files, dir and install dotfiles
-############################
+#################################################
 
-########## Variables ###########
+################################################# Variables
 
 DIR=~/dotfiles                    # dotfiles directory
 OLDDIR=~/dotfiles.old             # old dotfiles backup directory
@@ -12,7 +12,7 @@ FILES="bash_it vim bash_profile bashrc vimrc"    # list of things to symlink in 
 CONFDIR="bash_it vim/bundle/vundle"		# make default directory if not exits
 # clone the my bash_it repo and vundle repo to the dotfiles dir
 
-############################################## check for old configs and create new directory's
+################################################# check for old configs and create new directory's
 
 for dircheck in $CONFDIR; do
 		if [ ! -d $dircheck ]
@@ -25,7 +25,7 @@ for dircheck in $CONFDIR; do
 	fi
 done
 
-############################################## clone repos	
+################################################# clone repos	
 	
 git clone https://github.com/jalindr/theNewBash.git bash_it
 git clone https://github.com/jalindr/vundle.vim.git vim/bundle/vundle
@@ -39,4 +39,10 @@ for file in $FILES; do
     ln -s $DIR/$FILES ~/.$FILES
 done
 
-# install bash_it 
+################################################# install bash_it 
+
+echo "installing bash_it" 
+
+./bash_it/install.sh
+
+#end
