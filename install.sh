@@ -41,6 +41,7 @@ for file in $FILES; do
 		cp $DIR/$FILES ~/.$FILES
 	echo "Creating symlink to $file in home directory."
 		ln -s $DIR/$FILES ~/.$FILES	
+		fi
 done
 
 ################################################# install bash_it 
