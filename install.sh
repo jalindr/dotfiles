@@ -35,13 +35,19 @@ git clone https://github.com/jalindr/vundle.vim.git vim/bundle/vundle
 for file in $FILES; do
     #echo "Moving any existing dotfiles from ~ to $olddir"
     #mv ~/.$file ~/dotfiles_old/
-    echo "Creating symlink to $file in home directory."
-    ln -s $DIR/$FILES ~/.$FILES
+################################################ check if file exits if no create it and symlink it 
+    echo "creating dot files"
+		if [ ! -f $FILES ];
+		cp $DIR/$FILES ~/.$FILES
+	echo "Creating symlink to $file in home directory."
+		ln -s $DIR/$FILES ~/.$FILES	
 done
 
 ################################################# install bash_it 
 
 echo "installing bash_it" 
+
+chmod +x bash_it/install.sh 
 
 ./bash_it/install.sh
 
